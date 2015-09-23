@@ -1,0 +1,58 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
+    Vendor:   Intel
+    VRAM:     128 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.083 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Sjoerd\Documents\bewijzenMapSchool\jaar2\periode1\unityC#\EndlessRunner_latest\test_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 57e8 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.328525 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 219.
+Total: 0.301200 ms (FindLiveObjects: 0.018553 ms CreateObjectMapping: 0.016185 ms MarkObjects: 0.246723 ms  DeleteObjects: 0.005526 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.678040 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 216.
+Total: 0.338702 ms (FindLiveObjects: 0.020922 ms CreateObjectMapping: 0.010263 ms MarkObjects: 0.291726 ms  DeleteObjects: 0.015395 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.314545 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 864.
+Total: 0.353308 ms (FindLiveObjects: 0.049739 ms CreateObjectMapping: 0.018553 ms MarkObjects: 0.271593 ms  DeleteObjects: 0.012237 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.715302 ms
+
+Unloading 321 unused Assets to reduce memory usage. Loaded Objects now: 281.
+Total: 0.367914 ms (FindLiveObjects: 0.038686 ms CreateObjectMapping: 0.015790 ms MarkObjects: 0.220669 ms  DeleteObjects: 0.091978 ms)
+
+NullReferenceException: Object reference not set to an instance of an object
+  at ScoreSetter.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+upload successfull
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
