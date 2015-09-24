@@ -1,24 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
-/**
- * A camera to help with Orthagonal mode when you need it to lock to pixels.  Desiged to be used on android and retina devices.
- */
+
 public class PixelPerfect : MonoBehaviour {
-	/**
-	 * The target size of the view port.
-	 */
+	
 	public Vector2 targetViewportSizeInPixels = new Vector2(480.0f, 320.0f);
-	/**
-	 * Snap movement of the camera to pixels.
-	 */
+	
 	public bool lockToPixels = true;
-	/**
-	 * The number of target pixels in every Unity unit.
-	 */
+	
 	public float pixelsPerUnit = 32.0f;
-	/**
-	 * A game object that the camera will follow the x and y position of.
-	 */
+	
 	public GameObject followTarget;
 	
 	private Camera _camera;

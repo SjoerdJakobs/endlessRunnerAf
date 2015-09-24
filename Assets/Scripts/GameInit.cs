@@ -5,19 +5,15 @@ using UnityEngine.UI;
 
 public class GameInit : MonoBehaviour
 {
-    [Header("De scene die geladen zal worden")]
-    public string m_sceneToLoad = "Main";
-    [Header("Link het game object met het logo image hier")]
-    public Image m_logoImage;
-    [Header("Hoe lang moeten we wachten tot we gaan faden")]
-    public float m_waitTime = 2f;
-    [Header("Hoe snel moet het logo uit faden")]
-    public float m_fadeSpeed = 0.5f;
+    public string _sceneToLoad = "Main";
+    public Image _logoImage;
+    public float _waitTime = 2f;
+    public float _fadeSpeed = 0.5f;
 
     public void Awake()
     {
 #if UNITY_EDITOR
-        Application.LoadLevel(m_sceneToLoad);
+        Application.LoadLevel(_sceneToLoad);
 #else
         startFadeIn();
 #endif
@@ -25,24 +21,24 @@ public class GameInit : MonoBehaviour
 
     private void startFadeIn()
     {
-        StartCoroutine(this.Hideintro(() => { Application.LoadLevel(m_sceneToLoad); }));//start hide intro daarna maak callback naar scene laden
+        StartCoroutine(this.Hideintro(() => { Application.LoadLevel(_sceneToLoad); }));//start hide intro daarna maak callback naar scene laden
     }
 
     public IEnumerator Hideintro(Action _callback)
     {
-        if (_callback != null)//check of we call back hebben
+        if (_callback != null)
         {
-            if (m_logoImage != null)//check of we logo hebben
+            if (_logoImage != null)
             {
-                yield return new WaitForSeconds(this.m_waitTime);//wacht tot we intro gaan faden
-                float i = 1f;//alpha value
-                while (m_logoImage.GetComponent<Image>().color.a > 0f)//loop tot we het plaatje hebben uit gefade
+                yield return new WaitForSeconds(this._waitTime);
+                float i = 1f;
+                while (_logoImage.GetComponent<Image>().color.a > 0f)
                 {
-                    i -= m_fadeSpeed*Time.deltaTime;
-                    m_logoImage.GetComponent<Image>().color = (new Color(1, 1, 1, i));//verander de alpha van het plaatje
+                    i -= _fadeSpeed*Time.deltaTime;
+                    _logoImage.GetComponent<Image>().color = (new Color(1, 1, 1, i));
                     yield return null;
                 }
-                m_logoImage.GetComponent<Image>().color = (new Color(1, 1, 1, 0));//Zet de alpha op 0 zo dat het niet een negatief word
+                _logoImage.GetComponent<Image>().color = (new Color(1, 1, 1, 0));
                 _callback();
             }
             else
